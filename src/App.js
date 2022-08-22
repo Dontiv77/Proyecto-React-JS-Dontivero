@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,7 +8,6 @@ function App() {
     <div className="App">´
       <NavBar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Daniel Ontivero
         </p>
