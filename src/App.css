@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.UserSection {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 5px;
+	margin-bottom: 15px;
+  height: auto;
+  width: 300px;
+}
+

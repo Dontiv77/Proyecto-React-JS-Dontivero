@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import "bootstrap/dist/css/bootstrap.min.css";
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import CardComponent from './components/CardComponent/CardComponent';
+import Contador from './components/ItemCounts/ItemCounts';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         <p>
         <ItemListContainer />
         </p>
-        <div>
+        <div className='UserSection'>
           <CardComponent 
           img ='https://d3ugyf2ht6aenh.cloudfront.net/stores/940/460/products/399-lumen-11-81fafffc0d1f0a596915565523814459-640-0.jpg'
           />
@@ -24,8 +25,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-        {/*   Learn React */}
         </a>
+        <Contador/>
       </header>
     </div>
   );
