@@ -1,5 +1,5 @@
 import React from "react";
-import Cart from "./CartWidget/CartWidget";
+import Cart from "../CartWidget/CartWidget";
 const NavBar = () => {
     return (
 <nav className ="navbar navbar-expand-lg navbar-dark bg-dark">
