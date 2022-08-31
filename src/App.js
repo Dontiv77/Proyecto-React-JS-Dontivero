@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import CardComponent from './components/CardComponent/CardComponent';
 import Contador from './components/ItemCounts/ItemCounts';
-import DaniList from './components/Items/ItemList';
+import ItemList from './components/ItemListContainer/ItemList';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <ItemListContainer />
         </p>
         <div className='Cards-Container'>
-        <DaniList />
+        <ItemList />
         </div>
         <div className='UserSection'>
           <CardComponent 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Item from './Item';
 
-const DaniList = () => {
+const ItemList = () => {
 	const [users, setUsers] = useState([]);
 
 	useEffect(() => {
@@ -20,4 +20,4 @@ const DaniList = () => {
 	);
 };
 
-export default DaniList;
+export default ItemList;
