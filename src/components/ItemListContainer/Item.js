@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Contador from '../ItemCounts/ItemCounts';
 
-const CardUser = ({ data }) => {
+const Item = ({ data }) => {
 	return (
 		<Card sx={{ maxWidth: 345, margin: 10 }}>
 			<CardActionArea>
@@ -25,4 +25,4 @@ const CardUser = ({ data }) => {
 	);
 };
 
-export default CardUser;
+export default Item;

@@ -1,9 +1,16 @@
 import React from "react";
-import Title from "../Title/Title"
+import ItemList from "./ItemList";
+
 
 const ItemListContainer = () =>{
     return (
-        <Title greeting="Cascos Van Dame" />
+        
+        
+        <div className='Cards-Container'>
+            
+            <ItemList />
+        </div>
+        
     )
 }
 
