@@ -11,9 +11,13 @@ const NavBar = () => {
   </button>
   <div className ="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div className ="navbar-nav">
-      <Link className ="nav-item nav-link active" to="/">Productos</Link>
-      <Link className ="nav-item nav-link" to="/Contact ">Contac</Link>
-      <Link className ="nav-item nav-link" to="/About">About</Link>
+      
+      <Link className ="nav-item nav-link" to="/Joyeria">Joyeria</Link>
+      <Link className ="nav-item nav-link" to="/Hombre">Hombre</Link>
+      <Link className ="nav-item nav-link" to="/Mujer">Mujer</Link>
+      <Link className ="nav-item nav-link" to="/Electronica">Electronica</Link>
+      <Link className ="nav-item nav-link" to="/About">Sobre Nosotros</Link>
+      <Link className ="nav-item nav-link" to="/Contact ">Contacto</Link>
       <Link className ="nav-item nav-link" to="/"><Cart /></Link>
     </div>
   </div>

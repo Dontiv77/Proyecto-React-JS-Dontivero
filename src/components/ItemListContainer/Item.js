@@ -12,8 +12,11 @@ const Item = ({ data }) => {
 			<CardActionArea>
 				<CardMedia component='img' image={data.image} alt='green iguana' sx={{width: 300}}/>
 				<CardContent>
-					<Typography gutterBottom variant='h5' component='div'>
+					<Typography gutterBottom variant='h6' component='div'>
 						{data.title}
+					</Typography>
+					<Typography gutterBottom variant='h4' component='div'>
+						{data.category}
 					</Typography>
                     <Typography variant='body2' color='text.secondary'>
 						${data.price}

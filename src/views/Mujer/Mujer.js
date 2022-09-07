@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../ItemListContainer/Itemlist.css'
-import Item from './Item';
+
 // link router dom
 import { Link } from 'react-router-dom';
+import Item from '../../components/ItemListContainer/Item';
 
 
-const ItemList = () => {
+const Mujer = () => {
 	const [users, setUsers] = useState([]);
 	
 	useEffect(() => {
-		axios('https://fakestoreapi.com/products').then((res) =>
+		axios("https://fakestoreapi.com/products/category/women's clothing").then((res) =>
 			setUsers(res.data)
 		);
 	}, []);
@@ -20,7 +20,9 @@ const ItemList = () => {
 			
 			{users.map((user) => {
 				return (
+                    
 					<div key={user.id}>
+                        <h1>Mujer</h1>
 						<Link to={`/detail/${user.id}`} className='Link'>
 							<Item data={user} />
 						</Link>
@@ -32,5 +34,4 @@ const ItemList = () => {
 };
 
 
-export default ItemList;
-
+export default Mujer;
