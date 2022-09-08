@@ -10,6 +10,7 @@ const ItemList = () => {
 	const [users, setUsers] = useState([]);
 	
 	useEffect(() => {
+		//https://fakestoreapi.com/products/categories
 		axios('https://fakestoreapi.com/products').then((res) =>
 			setUsers(res.data)
 		);

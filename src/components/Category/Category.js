@@ -6,24 +6,21 @@ const Category = () => {
         return (
             <div>
             <h3>Category</h3>
-            <ul class="nav">
-            <li class="nav-item">
-            <Link class="nav-link category" to="/Category/Joyeria">Joyeria</Link>
+            <ul className="nav">
+            <li className="nav-item">
+            <Link className="nav-link category" to="/Category/jewelery">Joyeria</Link>
             </li>
-            <li class="nav-item">
-            <Link class="nav-link category" to="/Category/Hombre">Hombre</Link>
+            <li className="nav-item">
+            <Link className="nav-link category" to="/Category/men's clothing">Hombre</Link>
             </li>
-            <li class="nav-item">
-            <Link class="nav-link category" to="/Category/Mujer">Mujer</Link>
+            <li className="nav-item">
+            <Link className="nav-link category" to="/Category/women's clothing">Mujer</Link>
             </li>
-            <li class="nav-item">
-            <Link class="nav-link category" to="/Category/Electronica">Electronica</Link>
+            <li className="nav-item">
+            <Link className="nav-link category" to="/Category/electronics">Electronica</Link>
             </li>
             </ul>
             </div>
-
-
-    
     
     );
 };  
