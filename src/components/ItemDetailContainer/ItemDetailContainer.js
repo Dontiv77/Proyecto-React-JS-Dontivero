@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './ProductDetail.css';
+import './ItemDetailContainer.css';
 import { useParams } from 'react-router'; 
 import Item from '../../components/ItemListContainer/Item';
 import Contador from '../../components/ItemCounts/ItemCounts';
 
 
-const ProductDetail = () => {
+const ItemDetailContainer = () => {
 
 	const [user, setUser] = useState([]);
 
@@ -18,6 +18,7 @@ const ProductDetail = () => {
 		
 		); 
 	}, [id]); 
+
 
     Object.keys(user)
 	
@@ -32,4 +33,4 @@ const ProductDetail = () => {
 	); 
 } ;
 
-export default ProductDetail;
+export default ItemDetailContainer;
