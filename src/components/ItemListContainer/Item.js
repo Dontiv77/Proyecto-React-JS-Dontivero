@@ -23,7 +23,6 @@ const Item = ({ data }) => {
 					</Typography>
 				</CardContent>
 			</CardActionArea>
-            <Contador />
 		</Card>
 	);
 };

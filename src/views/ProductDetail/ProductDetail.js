@@ -3,6 +3,7 @@ import axios from 'axios';
 import './ProductDetail.css';
 import { useParams } from 'react-router'; 
 import Item from '../../components/ItemListContainer/Item';
+import Contador from '../../components/ItemCounts/ItemCounts';
 
 
 const ProductDetail = () => {
@@ -25,6 +26,7 @@ const ProductDetail = () => {
 		<div className='CharacterList-detail'>
 					<div>
 						<Item data={user} />
+						<Contador/>
 					</div>
 		</div> 
 	); 

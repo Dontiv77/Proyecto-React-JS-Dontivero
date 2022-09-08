@@ -1,5 +1,6 @@
 
 import React,{Component} from 'react';
+import { Link } from 'react-router-dom';
 
 let stock = 5;
 class Contador extends Component {
@@ -26,6 +27,10 @@ class Contador extends Component {
 		} 
 	};
 
+	addCart = () => {
+		console.log('Hola!!')
+	}
+
 	render() {
 		return ( 
 				
@@ -36,6 +41,9 @@ class Contador extends Component {
 						<button onClick={this.handlerCounterUp}>Agregar</button>
 						<button onClick={this.handlerCounterDown}>Quitar</button>
 					</div>
+					<Link to='/cart'>
+					<button onClick={this.handlerCounterDown}>Ir al Carrito</button>
+					</Link>
 				</div>
 			
 		);

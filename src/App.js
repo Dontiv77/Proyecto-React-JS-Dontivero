@@ -12,9 +12,8 @@ import Joyeria from './views/Joyeria/Joyeria';
 import Hombre from './views/Hombre/Hombre';
 import Mujer from './views/Mujer/Mujer';
 import Electronica from './views/Electronica/Electronica';
-
-
-
+import Cart from './components/CartWidget/CartWidget';
+import Category from './components/Category/Category';
 
 
 function App() {
@@ -23,6 +22,7 @@ function App() {
         <div className="App" >
         
         <NavBar />
+        <Category/>
         <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/Joyeria' element={<Joyeria/>} />
@@ -32,6 +32,7 @@ function App() {
         <Route path='/About' element={<About/>} />
         <Route path='/Contact' element={<Contact/>} />
         <Route path='/detail/:id' element={<ProductDetail />} />
+        <Route path='/Cart' element={<Cart />} />
         </Routes>
         <header className="App-header">
         </header>

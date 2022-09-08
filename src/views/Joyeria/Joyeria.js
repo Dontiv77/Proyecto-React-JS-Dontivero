@@ -26,7 +26,7 @@ const Joyeria = () => {
 					<div key={user.id}>
                         <h1>Joyeria</h1>
 						<Link to={`/detail/${user.id}`} className='Link'>
-                        	<Item data={user} />
+                        <Item data={user} />
 						</Link>
 					</div>
 				);
