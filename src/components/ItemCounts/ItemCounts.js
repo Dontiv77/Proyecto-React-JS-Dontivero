@@ -1,51 +1,32 @@
+import React,{ useEffect, useState} from 'react';
 
-import React,{Component} from 'react';
-import { Link } from 'react-router-dom';
+const Contador = ({ initial, stock, onAdd}) => {
 
-let stock = 5;
-class Contador extends Component {
-	constructor() {
-		super();
+	const [count, setCount] = useState(initial)
 
-		this.state = {
-			counter: 0
-		};
-
+	const agregar = ()=> {
+		setCount (count + 1)
 	}
+	const quitar = ()=> {
+		setCount (count - 1)
+	} 
+	useEffect (()=> {
+		setCount(parseInt(initial))
+	},[initial])
 
-	handlerCounterUp = () => {
-		if (this.state.counter < stock) {
-			this.setState({ counter: this.state.counter + 1 });
-		} else {
-			alert("Sin Stock")
-		};
-		
-	};
-	handlerCounterDown = () => {
-		if (this.state.counter > 0) {
-			this.setState({ counter: this.state.counter - 1 });
-		} 
-	};
-
-	addCart = () => {
-		console.log('Hola!!')
-	}
-
-	render() {
 		return ( 
 				
 				<div className='CounterSection'>
 					<p>Stock Total {stock}</p>
-					<p>Cantidad Seleccionada: {this.state.counter}</p>
+					<p>Cantidad Seleccionada: {count}</p>
 					<div className='btn-section'>
-						<button onClick={this.handlerCounterUp}>Agregar</button>
-						<button onClick={this.handlerCounterDown}>Quitar</button>
+						<button disabled={count>=stock} onClick={agregar}> + </button>
+						<button disabled={count<=1} onClick={quitar}>-</button>
 					</div>
-					<Link to='/cart'>
-					<button onClick={this.handlerCounterDown}>Ir al Carrito</button>
-					</Link>
+					<button disabled={stock <=0}  onClick={()=>onAdd(count) }>Añadir al Carrito</button>
 				</div>
 			
 		);
-	}
-} export default Contador;
+
+	};    
+	export default Contador;

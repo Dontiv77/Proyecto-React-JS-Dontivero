@@ -12,13 +12,14 @@ import Category from './components/Category/Category';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import CategoryList from './components/Category/CategoryList';
+import CartProvider from './components/CartContext/CarContext';
 
 
 function App() {
   return (
     <Router>
         <div className="App" >
-        
+        <CartProvider>
         <NavBar />
         <Category/>
         <Routes>
@@ -31,7 +32,7 @@ function App() {
         </Routes>
         <header className="App-header">
         </header>
-      
+        </CartProvider>
         </div>
         </Router>
   );
