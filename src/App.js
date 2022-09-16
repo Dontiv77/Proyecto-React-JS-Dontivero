@@ -7,12 +7,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import About from './views/About/About';
 import Contact from './views/Contact/Contact';
-import Cart from './components/CartWidget/CartWidget';
 import Category from './components/Category/Category';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import CategoryList from './components/Category/CategoryList';
 import CartProvider from './components/CartContext/CarContext';
+import Cart from './components/Cart/Cart';
 
 
 function App() {

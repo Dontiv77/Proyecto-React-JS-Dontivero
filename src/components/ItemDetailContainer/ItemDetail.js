@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './ItemDetailContainer.css';
-import { useParams } from 'react-router'; 
-import Item from '../ItemListContainer/Item';
 import Contador from '../ItemCounts/ItemCounts';
 import { useCartContext } from '../CartContext/CarContext';
 import { Link } from 'react-router-dom';
+import './ItemDetail.css';
 
 
 const ItemDetail = ({ data }) => {
