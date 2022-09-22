@@ -8,16 +8,16 @@ const Category = () => {
             <h3>Category</h3>
             <ul className="nav">
             <li className="nav-item">
-            <Link className="nav-link category" to="/Category/jewelery">Joyeria</Link>
+            <Link className="nav-link category" to="/Category/joyeria">joyeria</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link category" to="/Category/men's clothing">Hombre</Link>
+            <Link className="nav-link category" to="/Category/hombre">Hombre</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link category" to="/Category/women's clothing">Mujer</Link>
+            <Link className="nav-link category" to="/Category/mujer">Mujer</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link category" to="/Category/electronics">Electronica</Link>
+            <Link className="nav-link category" to="/Category/electronica">Electronica</Link>
             </li>
             </ul>
             </div>

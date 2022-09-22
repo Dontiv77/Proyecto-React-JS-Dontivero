@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import './ItemDetailContainer.css';
 import { useParams } from 'react-router'; 
 import ItemDetail from './ItemDetail';
+import { getFirestore, doc, getDoc} from "firebase/firestore";
 
 const ItemDetailContainer = () => {
 
@@ -10,15 +10,12 @@ const ItemDetailContainer = () => {
 
 	let { id } = useParams();
 
-	useEffect(() => {
-		axios(`https://fakestoreapi.com/products/${id}`).then((res) =>
-		setUser(res.data)
-		
-		); 
-	}, [id]); 
-
-
-    Object.keys(user)
+		useEffect(() => {
+			const querydb = getFirestore();
+			const queryDoc = doc(querydb,"productos", id)
+			getDoc(queryDoc)
+			.then(res=> setUser({id: res.id,...res.data()}))
+	}, [id]);
 	
 	return (
 		

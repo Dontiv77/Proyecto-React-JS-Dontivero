@@ -20,10 +20,10 @@ const ItemDetail = ({ data }) => {
 		
 		<div className='CharacterList-detail'>
 					<div>
-						<h2>{data.title}</h2>
-                        <img  src={data.image} alt='no foto' />
-                        <p>{data.description} </p>
-                        <p>Price: $ {data.price}</p>
+						<h2>{data.nombre}</h2>
+                        <img  src={data.imagen} alt='no foto' />
+                        <p>{data.descripcion} </p>
+                        <p>Price: $ {data.precio}</p>
 
 						{goToCart?<Link to='/cart'>ir al Carrito</Link> :<Contador initial={1} stock={5} onAdd={onAdd} />}
 					</div>

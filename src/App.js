@@ -10,7 +10,6 @@ import Contact from './views/Contact/Contact';
 import Category from './components/Category/Category';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import CategoryList from './components/Category/CategoryList';
 import CartProvider from './components/CartContext/CarContext';
 import Cart from './components/Cart/Cart';
 
@@ -25,7 +24,7 @@ function App() {
         <Routes>
         <Route path='/' element={<ItemListContainer/>} />
         <Route path='/detail/:id' element={<ItemDetailContainer />} />
-        <Route path='/Category/:categoryid' element={<CategoryList/>} />
+        <Route path='/Category/:categoriaId' element={<ItemListContainer/>} />
         <Route path='/About' element={<About/>} />
         <Route path='/Contact' element={<Contact/>} />
         <Route path='/Cart' element={<Cart />} />
