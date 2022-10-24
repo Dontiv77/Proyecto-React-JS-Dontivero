@@ -12,6 +12,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import CartProvider from './components/CartContext/CarContext';
 import Cart from './components/Cart/Cart';
+import Shop from './views/Shop/Shop';
 
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
         <Route path='/About' element={<About/>} />
         <Route path='/Contact' element={<Contact/>} />
         <Route path='/Cart' element={<Cart />} />
+        <Route path='/shop' element={<Shop />} />
+
         </Routes>
         <header className="App-header">
         </header>
